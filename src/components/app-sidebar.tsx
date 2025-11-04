@@ -17,14 +17,14 @@ import {
 
 // This is sample data.
 const data = {
-  versions: ["1.0.1", "1.1.0-alpha", "2.0.0-beta1"],
+  versions: [""],
   navMain: [
     {
       title: "Dashboard",
       url: "/",
       isActive: true,
       items: [
-        { title: "Earth", url: "/", isActive: true },
+        { title: "Topology", url: "/", isActive: true },
         { title: "Nodes management", url: "/nodes-management", isActive: true },
         { title: "Links management", url: "/links-management", isActive: true },
         { title: "Algorithms management", url: "/algorithms-management", isActive: true },
@@ -42,7 +42,6 @@ export function AppSidebar({ ...props }: React.ComponentProps<typeof Sidebar>) {
           versions={data.versions}
           defaultVersion={data.versions[0]}
         />
-        <SearchForm />
       </SidebarHeader>
       <SidebarContent>
         {/* We create a SidebarGroup for each parent. */}
