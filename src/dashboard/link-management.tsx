@@ -75,7 +75,7 @@ export default function LinkManagement() {
                                     srcNodeName: l.srcNode,
                                     destNode: l.destNode,
                                     destNodeName: l.destNode,
-                                    available: l.status !== 'DOWN',
+                                    available: l.available,
                                     metrics: {
                                         bandwidthMbps: l.metrics?.bandwidthMbps,
                                         delayMs: l.metrics?.delayMs,

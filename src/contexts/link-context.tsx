@@ -8,7 +8,7 @@ export interface Link {
   destNode: string
   srcIp?: string
   destIp?: string
-  status?: 'UP' | 'DOWN'
+  available: boolean
   metrics?: {
     delayMs?: number
     jitterMs?: number
